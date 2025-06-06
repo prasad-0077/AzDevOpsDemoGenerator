@@ -2,6 +2,7 @@
 
 namespace ADOGenerator
 {
+    //my first change
     public static class ServiceExtensions
     {
         public static readonly object objLock = new object();
@@ -45,7 +46,7 @@ namespace ADOGenerator
                 string fileName = $"{DateTime.Now.ToString("yyyy-MM-dd")}-{id}.txt";
                 if (id.EndsWith("_Errors"))
                 {
-                    if(!Directory.Exists(Path.Combine(logFilePath, "Errors")))
+                    if (!Directory.Exists(Path.Combine(logFilePath, "Errors")))
                     {
                         Directory.CreateDirectory(Path.Combine(logFilePath, "Errors"));
                     }
